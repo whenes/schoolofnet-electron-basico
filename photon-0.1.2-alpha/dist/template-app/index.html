@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Base64 Generator</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/photon.min.css">
+
+    <!-- Javascript -->
+    <script src="js/menu.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="window">
+
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Base64 Generator</h1>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane">
+            <div class="form-group">
+              <label>Text to Generate</label>
+              <input type="text" class="form-control" name="txt" id="txt">
+              <button type="button" class="btn btn-large btn-primary" onclick="generate()">Generate</button>
+              <button type="button" class="btn btn-large btn-warning" onclick="decode()">Decode</button>
+              <div class="pane" id="result"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="toolbar toolbar-footer">
+        <h1 class="title">&copy; Copyright Whenes</h1>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </body>
+</html>
